@@ -1,0 +1,439 @@
+html{background:#fff}
+body{
+	margin: 0px;
+	left: 0px;
+	font-family: "arial";
+}
+
+/*全局按钮CSS*/
+.fl-btn{
+	border-radius: 6px;
+	background: #eee;
+	font-family: "arial";
+	border: none;
+	height: 24px;
+	margin-left: 8px;
+	cursor:pointer
+}
+
+.fl-btn:hover{background: rgb(249,249,249);}
+
+.fl-btn:active{
+	outline:0 none !important;
+	border:none;
+}
+.fl-btn::-moz-focus-inner{border-color:transparent!important;}
+
+/*******************字体样式按钮******************/
+
+.fl-font-style,.fl-align-style{
+	border: 1px solid rgb(210,209,210);
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	color: rgb(8,8,8);
+	margin-left: -5px;
+}
+
+.fl-font-style:hover,.fl-align-style:hover{
+	color: rgb(255,255,255);
+	background: rgb(93,164,249);
+	border: 1px solid rgb(210,209,210);
+}
+
+.fl-font-style-both,.fl-align-style-both{
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.fl-font-style-right,.fl-align-style-right{
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.fl-font-style-active,.fl-align-style-active{
+	color: rgb(255,255,255);
+	background: rgb(93,164,249);
+	border: 1px solid rgb(210,209,210);
+}
+
+.fl-font-style-bold{
+	font-weight: bold;
+}
+
+.fl-font-style-italic{
+	font-style: italic;
+}
+
+.fl-font-style-underline{
+	text-decoration: underline;
+}
+
+/*******************字体样式按钮******************/
+
+/*全局按钮CSS*/
+
+.top-panel{
+	height: 49px;
+	width: 100%;
+	background: #fff;
+	border-top: 2px solid rgb(210,209,210);
+		border-bottom: 1px solid rgb(210,209,210);
+}
+
+.top-left-panel{
+	float: left;
+	margin-left: 60px;
+	margin-top: 14px;
+}
+
+.top-right-panel{
+	float: right;
+	margin-right: 60px;
+	margin-top: 14px;
+}
+
+/**********按钮的选择菜单***********/
+
+.line-select{
+	width: 64px;
+	border: 2px solid rgb(210,209,210);
+	border-radius: 2px;
+	margin-top: 12px;
+	height: 73px;
+	position: absolute;
+	margin-left: -12px;
+}
+
+.line-select ul{
+	list-style: none;
+	margin-top: 0px;
+}
+
+.line-select ul li{
+	width: 170px;
+	height: 25px;
+	border: 1px solid rgb(0,0,0);
+}
+
+.line-select ul li:hover{
+	background: rgb(248,248,248);
+}
+
+.line-select h4:hover{
+	cursor: pointer;
+}
+
+
+/**********按钮的选择菜单***********/
+
+/*左侧设计区域*/
+.chart-design{
+	padding-left: 10px;
+	position: absolute;
+	bottom: 0;
+	top: 52px;
+	left: 230px;
+	right: 0px;
+	width: auto;
+	background:#fff;
+}
+.hiden_fix{
+
+position: absolute;
+	bottom: 0;
+	top: 52px;
+	left: 0px;
+	right: 0px;
+	cursor:not-allowed;
+	}
+
+
+/*右侧工具栏*/
+.chart-right-panel{
+	float: left;
+	width: 228px;
+	border-right: 2px solid rgb(210,209,210);
+    position: absolute;
+    top: 52px;
+    bottom: 0px;
+    left: 0px;
+	z-index:4;
+}
+
+.chart-ratio{
+	bottom: 0px;
+	border-top: 2px solid rgb(210,209,210);
+	height: 20px;
+	position: fixed;
+	width: 100%;
+}
+
+.chart-ratio-form{
+	width: 150px;
+	border: none;
+	height: 20px;
+	padding-right: 10px;
+	border-right: 2px solid rgb(210,209,210);
+}
+
+.rare-ratio{
+	margin-left: 172px;
+	margin-top: -26px;
+	width: 40px;
+	margin-bottom: 0px;
+}
+
+#rear-ratio-display{
+	width: 60px;
+}
+
+.chart-ratio-cover{
+	float: right;
+	margin-right: 228px;
+	background: rgb(255,255,255);
+	width: 20px;
+	height: 20px;
+	margin-top: -21px;
+}
+
+/*属性面板*/
+.chart-list{
+	color: rgb(136,136,136);
+	font-size: 14px;
+	margin-top: 19px;
+}
+
+.chart-list p{
+cursor:pointer;
+font-size:12px;
+}
+
+.chart-list p a{
+	display:none;
+float:right;
+color:#666;
+background:#eee;
+border-radius:4px;
+line-height:20px;
+font-size:12px;
+padding:0px 10px;
+text-decoration:none;
+margin-right:15px;
+	transition: all 1s;
+}
+.chart-list p a:hover{
+	background:#666;
+	color:#333;
+	transition: all 1s;
+	
+}
+
+.chart-list p:hover a{
+display:block	
+}
+.chart-list h4{
+	font-weight: lighter;
+	background: rgb(248,248,248);
+	padding-left: 10px;
+	height: 20px;
+	padding-top: 4px;
+	margin-top: -20px;
+	border-bottom: 1px solid rgb(210,209,210);
+	border-top: 1px solid rgb(210,209,210);
+	font-size:13px;
+}
+
+.chart-list h4:hover{
+	background: rgb(238,238,238);
+	cursor: pointer;
+}
+
+.chart-list .list-content{
+	color: rgb(69,69,69);
+	margin-top: -20px;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-bottom: 22px;
+}
+
+/************拖动/画流程图部分CSS************/
+
+.draggable{
+	float: left;
+  	width: 40px;
+  	height: 20px;
+  	margin-top: 3px;
+  	margin-bottom:10px;
+  	background: rgb(255,255,255);
+  	text-align: center;
+    border:2px solid rgb(136,242,75);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    font-size: 12px;
+ }
+
+.draggable:hover{
+  	cursor:pointer;
+}
+
+.droppable{
+	margin-top: 0px;
+	padding-left: 0px;		
+}
+
+.drop-active{
+  	background: rgb(238,238,238);
+}
+
+/*圆角矩形*/
+.roundedRect{
+	border-radius: 8px;
+}
+
+/*圆*/
+.circle{
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	padding: 0px;
+	line-height:30px;
+	
+}
+
+/*菱形*/
+.rhombus{
+	padding: 0px;
+	width: 24px;
+	height: 24px;
+	margin-top: 12px;
+	margin-left: 18px;
+	font-size: 12px;
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+
+/*以下是创建新部件的时候改变的属性(和右侧工具栏的大小不同)*/
+
+.new-circle{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+
+.new-rhombus{
+	width: 60px;
+	height: 60px;
+}
+
+.new-roundedRect,.new-rect{width: 120px;}
+
+/*以上是创建新部件的时候改变的属性(和右侧工具栏的大小不同)*/
+
+/******************右侧属性栏******************/
+
+/*location|size|fill|shadow*/
+.lo-xy-display{
+	margin-top: 28px;
+}
+
+.chart-location-form{border:none;}
+
+.chart-fill-display{margin-top: 16px;}
+
+.chart-shadow-display{margin-top: 10px;}
+
+.chart-size-border-display{margin-top: 14px;}
+
+.chart-fill-border-display{
+	margin-top: 16px;
+}
+
+.chart-fill-border-selector{
+	width: 144px;
+}
+
+/*font*/
+#json-display-area{
+	min-width: 208px;
+	max-width: 208px;
+	bottom: 20px;
+	height: auto;
+	width: 208px;
+}
+
+/*颜色选择器的位置*/
+.label-flag-color{
+
+}
+
+/*jsPlumb拖动事件*/
+._jsPlumb_drag_select * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+/*保存为图片矿口*/
+.save-form{
+	position: absolute;
+	border:1px solid rgb(160,160,160);
+	width: 60%;
+	margin-top: 20px;
+	left: 20%;
+	border-bottom: 2px solid rgb(160,160,160);
+	background:#fff;
+}
+
+.save-heading{
+	background: rgb(228,226,227);
+	height: 25px;
+	border-bottom: 2px solid rgb(210,209,210);
+	padding:10px;
+	font-size: 20px;
+}
+
+.save-json,.save-img{
+	padding: 10px;
+}
+
+.save-json h5,.save-img h5{
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+#save-json-form-display{
+	width: 98.975%;
+	max-width: 98.75%;
+	height: 120px;
+}
+
+
+.fuchuang{width:100%;height:100%;background:rgba(0,0,0,0.5);position:fixed;z-index:5;display:none}
+.fuqu{position:absolute;width:475px;height:70px;top:0;left:0;bottom:0;right:0;margin:auto;background:#fff;padding: 20px;border-radius: 10px;}
+.fuqu input{line-height: 30px;text-indent: 10px;border: 1px solid #eee;width: 280px;}
+.fuqu input[type="button"]{text-align: center;text-indent:0;width: 80px;margin-left: 10px;font-size:12px;border-radius:5px;cursor:pointer;}
+.fuqu span{line-height: 30px;text-align: center;text-indent:0;width: 80px;margin-left: 10px;background:#eee;font-size:12px;display:inline-block;border-radius:5px;cursor:pointer}
+
+.area .draggable{font-size:12px;margin:10px;}
+.area .draggable:nth-child(1){width:80px;height:12px;padding-top:60px;background:url(../img/ico_01.png);background-size:100% 100%;}
+.area .draggable:nth-child(2){width:80px;height:12px;padding-top:60px;background:url(../img/ico_02.png);background-size:100% 100%;}
+.area .draggable:nth-child(3){width:80px;height:12px;padding-top:60px;background:url(../img/ico_03.png);background-size:100% 100%;}
+.area .draggable:nth-child(4){width:80px;height:12px;padding-top:60px;background:url(../img/ico_04.png);background-size:100% 100%;}
+.area .draggable:nth-child(5){width:80px;height:12px;padding-top:60px;background:url(../img/ico_05.png);background-size:100% 100%;}
+
+._jsPlumb_overlay{text-indent:-34px;background:rgba(238,238,238,0.8);padding:8px;border-radius:4px;color:#333;padding-left:40px;font-size:12px;}
